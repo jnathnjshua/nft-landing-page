@@ -28,6 +28,7 @@ body {
   height: 100vh;
   color: var(--font-color);
   font-family: var(--font-primary);
+  cursor: url("../nft-landing-page/images/Website assets/mouse.png"),auto;
 }
 
 .container {
