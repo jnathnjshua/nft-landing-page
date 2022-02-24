@@ -38,13 +38,14 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 600px;
+  min-height: 400px;
   padding: 250px 20vw;
 }
 
 
 
 .capy {
+  z-index: -1;
   position: absolute;
   left: 0;
   animation: zoomies 15s infinite linear;
@@ -53,6 +54,7 @@ section {
 .capy::before {
   content: url("images/Website assets/Flying capy.png");
   position: absolute;
+  z-index: 1;
   width: 64px;
   top: -80%;
   left: 10%;
