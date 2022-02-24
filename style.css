@@ -8,7 +8,7 @@
   --font-primary: 'Akaya Telivigala', cursive;
   --font-secondary: 'Akaya Kanadaka', cursive;
   --font-code: 'Roboto', monospace;
-  --bg-color: #78B1B8;
+  --bg-color: cornflowerblue;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
   --accent-color: #68C76D;
@@ -22,13 +22,114 @@
 }
 
 body {
+  margin: 0;
   background-color: var(--bg-color);
   display: flex;
   flex-flow: column;
   height: 100vh;
   color: var(--font-color);
   font-family: var(--font-primary);
-  cursor: url("../nft-landing-page/images/Website\ assets/mouse.png"),auto;
+  cursor: url("images/Website assets/mouse.png"),auto;
+}
+
+section {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 600px;
+  padding: 250px 20vw;
+}
+
+
+
+.capy {
+  position: absolute;
+  left: 0;
+  animation: zoomies 15s infinite linear;
+}
+
+.capy::before {
+  content: url("images/Website assets/Flying capy.png");
+  position: absolute;
+  width: 64px;
+  top: -80%;
+  left: 10%;
+  
+}
+
+.capy::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: 20%;
+}
+
+@keyframes zoomies {
+  from {
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    left: 100%;
+    transform: translateX(0%);
+  }
+}
+
+.TSU {
+  z-index: 1;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 600px;
+  padding: 100px 20vw;
+  background: linear-gradient(to bottom, var(--bg-color), #86ECFA);
+}
+
+.green1 {
+  background: linear-gradient(to bottom, #68C76D, #57F365);
+}
+
+.greenOriginal {
+  background: #57F365;
+}
+
+.red {
+  background: red;
+}
+
+.pink {
+  background: pink;
+}
+
+.dark {
+  background: black;
+}
+
+.wave1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave1 svg {
+  position: relative;
+  display: block;
+  width: calc(144% + 1.3px);
+  height: 154px;
+  transform: rotateY(180deg);
+}
+
+.wave1 .shape-fill {
+  fill: #68C76D;
 }
 
 .container {
@@ -40,7 +141,7 @@ body {
 /* HEADER */
 
 header {
-  box-shadow: var(--header-shadow);
+  box-shadow: none
 }
 
 header .container {
@@ -53,6 +154,14 @@ header .container {
   display: flex;
   gap: 2rem;
   align-items: center;
+}
+
+a:hover,
+a:focus{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  cursor: url("images/Website assets/mouse.png"), auto;
 }
 
 /* BUTTONS */
@@ -74,7 +183,9 @@ header .container {
   text-decoration: none;
   outline: none;
 }
-.btn:hover {
+.btn:hover,
+.btn:focus {
+  cursor: url("images/Website assets/mouse.png"), auto;
   box-shadow: none;
 }
 
