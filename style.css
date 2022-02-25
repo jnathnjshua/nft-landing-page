@@ -295,13 +295,13 @@ section {
     padding: 0rem 0rem;
   }
   .logo {
-    margin-left: 0.3rem;
+    margin-left: 0.6rem;
   }
   .menu {
     gap: 0rem;
   }
   .wallet-btn {
-    margin-right: 0.3rem;
+    margin-right: 1.4rem;
     padding: 1rem;
     max-width: 10rem;
   }
@@ -318,5 +318,8 @@ section {
       left: 96%;
       transform: translateX(-50%);
     }
+  }
+  section {
+    min-height: 500px;
   }
 }
