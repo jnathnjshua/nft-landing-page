@@ -27,6 +27,7 @@ body {
   display: flex;
   flex-flow: column;
   height: 100vh;
+  width: 100vw;
   color: var(--font-color);
   font-family: var(--font-primary);
   cursor: url("images/Website assets/mouse.png"),auto;
@@ -36,10 +37,10 @@ section {
   position:relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-height: 400px;
-  padding: 250px 20vw;
+  align-items:center;
+  text-align:center;
+  min-height: 450px;
+  padding: 20px 20vw;
 }
 
 
@@ -140,6 +141,11 @@ section {
   padding: 1rem 2rem;
 }
 
+.bigName {
+  width: 100%;
+  height: auto;
+  margin-top: -5rem;
+}
 /* HEADER */
 
 header {
@@ -147,6 +153,7 @@ header {
 }
 
 header .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -275,5 +282,24 @@ section {
     margin-left: 0;
     padding: 1rem;
     max-width: 8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 0rem 0rem;
+  }
+  .logo {
+    margin-left: 0.3rem;
+  }
+  .menu {
+    gap: 0rem;
+  }
+  .wallet-btn {
+    margin-right: 0.3rem;
+    padding: 1rem;
+    max-width: 10rem;
   }
 }
