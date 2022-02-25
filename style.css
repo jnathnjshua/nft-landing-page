@@ -286,17 +286,6 @@ section {
   .capy{
     animation: zoomies 7s infinite linear;
   }
-  @keyframes zoomies {
-    from {
-      left: -35%;
-      transform: translateX(-96%);
-    }
-  
-    to {
-      left: 96%;
-      transform: translateX(-35%);
-    }
-  }
 }
 
 @media screen and (max-width: 450px) {
