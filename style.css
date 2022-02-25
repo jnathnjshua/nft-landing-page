@@ -71,13 +71,13 @@ section {
 
 @keyframes zoomies {
   from {
-    left: 0;
-    transform: translateX(-100%);
+    left: -4%;
+    transform: translateX(-96%);
   }
 
   to {
-    left: 100%;
-    transform: translateX(0%);
+    left: 96%;
+    transform: translateX(-4%);
   }
 }
 
@@ -285,7 +285,7 @@ section {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .container {
     max-width: 460px;
     margin: 0 auto;
@@ -301,5 +301,19 @@ section {
     margin-right: 0.3rem;
     padding: 1rem;
     max-width: 10rem;
+  }
+  .capy{
+    animation: zoomies 7s infinite linear;
+  }
+  @keyframes zoomies {
+    from {
+      left: -50%;
+      transform: translateX(-96%);
+    }
+  
+    to {
+      left: 96%;
+      transform: translateX(-50%);
+    }
   }
 }
